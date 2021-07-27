@@ -4,11 +4,11 @@ pipeline{
         PATH = "/usr/bin:$PATH"
     }
     stages{
-        stage("Git Checkout"){
+        /*stage("Git Checkout"){
             steps{
                 git branch: 'main', url: 'https://github.com/Aisshwarya16/spring-petclinic.git'
             }
-        }
+        }*/
         stage("Maven Build"){
             steps{
                 sh "./mvnw package"
